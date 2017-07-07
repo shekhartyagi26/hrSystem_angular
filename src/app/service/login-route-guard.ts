@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 
 export class LoginRouteGuard implements CanActivate {
     constructor() {}
-
     canActivate() {
         return !!localStorage.getItem('token');
     }
