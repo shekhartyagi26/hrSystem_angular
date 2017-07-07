@@ -3,16 +3,20 @@
     width: 100%;
     min-height: 100%;
 }
+
 .width-90 {
     width: 90%;
 }
+
 .cardsub {
     color: inherit;
     font-size: 18px;
 }
+
 table.list {
     width: 100%;
-    tr, th {
+    tr,
+    th {
         text-align: center;
         border-bottom: 1px solid $tablistcolor;
         padding: 5px 0px;
@@ -24,9 +28,11 @@ table.list {
         }
     }
 }
+
 .mainform {
     margin-bottom: 10px;
 }
+
 .error {
     color: $red;
     text-align: center;

@@ -13,10 +13,7 @@
                     <input mdInput placeholder="Subject" [(ngModel)]="subject" autoComplete="off" name="subject" required ngModel>
                     <md-error>Required</md-error>
                 </md-input-container>
-                <ckeditor name="body" 
-                    [(ngModel)]="ckeditorContent"
-                    [config]="{uiColor: '#00ffff'}"
-                    debounce="500" ngModel>
+                <ckeditor name="body" [(ngModel)]="ckeditorContent" [config]="{uiColor: '#00ffff'}" debounce="500" ngModel>
                 </ckeditor>
             </p>
         </div>
@@ -30,7 +27,7 @@
             <br/>
             <md-card class="side-nav">
                 <button md-button class="h-d">User Variables</button>
-                <md-card-content class="d-c"> 
+                <md-card-content class="d-c">
                     <a md-button class="con-btn" *ngFor="let uvar of userVar">{{uvar.variableCode}}</a>
                 </md-card-content>
             </md-card>
@@ -38,7 +35,7 @@
     </div>
     <hr>
     <div class="fx-pos">
-    	<button md-raised-button (click)="close()">Back</button>
-    	<button md-raised-button type="submit" color="accent">Update</button>
+        <button md-raised-button (click)="close()">Back</button>
+        <button md-raised-button type="submit" color="accent">Update</button>
     </div>
 </form>

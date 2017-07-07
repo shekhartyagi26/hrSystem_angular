@@ -8,7 +8,7 @@
                     <p [class.active]="selectedId == subTag.id && i != 0">
                         <a *ngIf="i == 0" class="sub-title">{{subTag.title}}</a>
                         <a (click)="getEmail(subTag.id);" *ngIf="i != 0">{{subTag.title}} ({{subTag.unread}}/{{subTag.count}})</a>
-                       <!--  <md-icon class="nav-arrow" (click)="openSubChildMenu(subTag.title)" *ngIf="subTag.subchild">{{subTag.menuOpen? 'keyboard_arrow_up':'keyboard_arrow_down'}}</md-icon> -->
+                        <!--  <md-icon class="nav-arrow" (click)="openSubChildMenu(subTag.title)" *ngIf="subTag.subchild">{{subTag.menuOpen? 'keyboard_arrow_up':'keyboard_arrow_down'}}</md-icon> -->
                     </p>
                     <div *ngIf="subTag.subchild">
                         <div class="subenav" [class.active]="selectedId == subTagSubchild.id" *ngFor="let subTagSubchild of subTag.subchild" (click)="getEmail(subTagSubchild.id)">
@@ -19,8 +19,7 @@
             </div>
         </div>
     </div>
-
-   <!--  <md-list-item class="mainnav" (click)="firstlist=!firstlist">
+    <!--  <md-list-item class="mainnav" (click)="firstlist=!firstlist">
              <md-icon md-list-icon class="candcolor">drafts</md-icon>
             <a md-line>Candidates</a>
             <md-icon>{{firstlist? 'keyboard_arrow_up':'keyboard_arrow_down'}}</md-icon>
@@ -58,5 +57,4 @@
                 <a>{{tag.title}} ({{tag.unread}}/{{tag.count_email}})</a>
             </md-list-item>
         </md-list> -->
-
 </md-sidenav>

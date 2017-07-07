@@ -1,15 +1,18 @@
 @import './../../variable.scss';
 .btn-pos {
-	left: 80%;
+    left: 80%;
 }
+
 .cd-pos {
-	position: inherit;
+    position: inherit;
     top: 60px;
     background-color: $contentcolor;
 }
+
 .flex-container {
-  display: -webkit-inline-flex; /* Safari */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

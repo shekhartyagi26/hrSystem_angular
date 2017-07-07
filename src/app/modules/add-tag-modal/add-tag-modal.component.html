@@ -4,23 +4,23 @@
 <hr>
 <form #addForm="ngForm" (ngSubmit)="addTag(addForm)">
     <div class="body">
-    <span class="text-err" *ngIf="showMessage">{{message}}</span>
+        <span class="text-err" *ngIf="showMessage">{{message}}</span>
         <md-grid-list cols="4" rowHeight="65px" gutterSize="10px">
             <md-grid-tile [colspan]="2">
-                <md-input-container  style="width: 100%">
+                <md-input-container style="width: 100%">
                     <input mdInput name="title" placeholder="Title" ngModel required>
                     <md-error>Title Is Required</md-error>
                 </md-input-container>
             </md-grid-tile>
             <md-grid-tile [colspan]="2">
-                <md-radio-group class="pos-radio" name="type" [(ngModel)]="type" ngModel required  style="width: 100%">
+                <md-radio-group class="pos-radio" name="type" [(ngModel)]="type" ngModel required style="width: 100%">
                     <md-radio-button *ngIf="addTagType == 'manual'" name="type" value="Manual" (click)="types = 0">Manual Tag</md-radio-button>
                     <md-radio-button *ngIf="addTagType == 'automatic'" name="type" value="Automatic" (click)="types = 1">Automatic Tag</md-radio-button>
                     <md-radio-button *ngIf="addTagType == 'jobProfile'" name="type" value="Automatic" (click)="types = 1">Create Job Profile</md-radio-button>
                 </md-radio-group>
             </md-grid-tile>
             <md-grid-tile [colspan]="2" *ngIf="types">
-                <md-input-container  style="width: 100%">
+                <md-input-container style="width: 100%">
                     <input mdInput name="email" type="email" placeholder="Email" ngModel>
                     <md-error>Invalid Email</md-error>
                 </md-input-container>
@@ -40,7 +40,7 @@
                     <input mdInput name="to" type="date" placeholder="To date" ngModel>
                 </md-input-container>
             </md-grid-tile>
-             <md-grid-tile [colspan]="2" *ngIf="types">
+            <md-grid-tile [colspan]="2" *ngIf="types">
                 <md-select class="width-100" placeholder="Select Template" name="template_id" ngModel>
                     <md-option>
                         None
@@ -51,7 +51,7 @@
                 </md-select>
             </md-grid-tile>
             <md-grid-tile [colspan]="2" *ngIf="types">
-                    <md-slide-toggle name="assign" ngModel style="width: 100%">Assign to all existing mails</md-slide-toggle>
+                <md-slide-toggle name="assign" ngModel style="width: 100%">Assign to all existing mails</md-slide-toggle>
             </md-grid-tile>
         </md-grid-list>
         <div>
@@ -59,12 +59,11 @@
             <color-picker name="color" [(ngModel)]="originalcolor" [availableColors]="availableColors" ngModel></color-picker>
         </div>
     </div>
-
     <div class="footer">
         <a md-raised-button (click)="close()">Close</a>
         <button md-raised-button type="submit" color=primary [disabled]="addForm.invalid || showloading" (click)="addTag(addForm)">
-        <span>Save </span>
-        <!-- <md-spinner *ngIf="showloading" class="s-ld"></md-spinner> -->
+            <span>Save </span>
+            <!-- <md-spinner *ngIf="showloading" class="s-ld"></md-spinner> -->
         </button>
     </div>
 </form>
