@@ -21,7 +21,6 @@ import { EmailModalComponent } from './modules/email-modal/email-modal.component
 import { AutomaticTagComponent } from './modules/automatic-tag/automatic-tag.component';
 import { JobProfileTagComponent } from './modules/job-profile-tag/job-profile-tag.component';
 
-
 export const routes: Route[] = [{
     path: '',
     redirectTo: 'login',

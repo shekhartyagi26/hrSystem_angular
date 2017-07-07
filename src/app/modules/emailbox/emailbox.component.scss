@@ -3,14 +3,17 @@
     display: flex;
     flex: 1;
 }
+
 .emailstyle {
     padding: 0px;
     margin-bottom: 5px;
     width: 100%;
 }
+
 .bleftblue {
     border-left: 5px solid $borderleftblue;
 }
+
 .logodesign {
     color: $white;
     display: inline-flex;
@@ -23,14 +26,17 @@
     margin-left: 4px;
     margin-right: 3px;
 }
+
 .heightwidth27 {
     height: 27px;
     width: 27px;
 }
+
 .logo {
     @extend .logodesign;
     @extend .heightwidth27;
 }
+
 .emailcheckbox {
     @extend .logodesign;
     background-color: $roundcirclecolor;
@@ -38,61 +44,68 @@
     width: 54px;
     //cursor: pointer; 
 }
+
 .detailloc {
     position: absolute;
     left: 5px;
     cursor: pointer;
     padding-right: 10px;
-    p{
-        margin-bottom:0px;
+    p {
+        margin-bottom: 0px;
     }
 }
+
 .inline {
     display: inline;
 }
+
 .attach {
     width: 8px;
     height: 8px;
     font-size: 15px;
 }
+
 .checked {
     opacity: 0.6;
 }
+
 .unchecked {
     opacity: 1;
 }
-    
-.default-tag-buttons{
+
+.default-tag-buttons {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height:100%;
-    .cyan{
-        line-height:20px!important;
+    height: 100%;
+    .cyan {
+        line-height: 20px!important;
         margin: 0px 4px 0px 4px;
-        font-weight:bold;
-        color:#fff;
+        font-weight: bold;
+        color: #fff;
         font-size: 12px;
     }
-    .material-icons{
+    .material-icons {
         font-size: 14px!important;
-        line-height:1px;
+        line-height: 1px;
     }
 }
+
 .labels {
-      background-color: #6887ff;
-      color: rgba(255,255,255,.87);
-      padding: .15em .35em;
-      font-size: 75%;
-      line-height: 1;
-      vertical-align: baseline;
-      font-weight: 700;
-      border-radius: .2rem;
-      text-align: center;
-      white-space: nowrap;
-      display: inline-block;
+    background-color: #6887ff;
+    color: rgba(255, 255, 255, .87);
+    padding: .15em .35em;
+    font-size: 75%;
+    line-height: 1;
+    vertical-align: baseline;
+    font-weight: 700;
+    border-radius: .2rem;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
 }
-.auto-tags{
+
+.auto-tags {
     font-size: 10px;
     margin: 0px 2px 0px 2px;
     vertical-align: bottom;

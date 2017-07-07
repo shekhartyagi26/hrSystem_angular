@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ImapMailsService } from '../../service/imapemails.service';
+import { Component, OnInit } from '@angular/core';import { ImapMailsService } from '../../service/imapemails.service';
 
 @Component({
     selector: 'app-useractivitylog',
@@ -19,5 +18,4 @@ export class UserActivityLogComponent implements OnInit {
             this.emaillist = data;
         });
     }
-
 }

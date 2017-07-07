@@ -8,7 +8,6 @@ import { historylog, Emaillist, SystemVar } from './mock-data';
 import { InterceptedHttp } from './http.interceptor';
 import { Subject } from 'rxjs/Subject';
 
-
 @Injectable()
 export class ImapMailsService {
     @Output() apiStartEvent: EventEmitter<any> = new EventEmitter(true);

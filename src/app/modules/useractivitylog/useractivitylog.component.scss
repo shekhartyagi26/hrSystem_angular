@@ -5,11 +5,13 @@
     border-radius: 3px;
     min-height: 100px;
 }
+
 .h2pos {
     position: inherit;
     top: 0px;
     left: 15px;
 }
+
 .activity {
     min-height: 68px;
     width: 100%;
@@ -17,24 +19,29 @@
     margin-left: 30px;
     margin-top: 7px;
 }
+
 .subdetails {
     margin-left: 12px;
     border-left: 1px solid $cactive-1;
     margin-top: 24px;
 }
+
 .marlf-18 {
     margin-left: 18px;
     padding-bottom: 16px;
 }
+
 .opc06 {
     opacity: 0.6;
 }
+
 md-list {
     md-list-item:hover {
         background-color: $hovecolor;
         cursor: pointer;
     }
 }
+
 .bolno {
     margin-right: 10px;
     position: absolute;
@@ -49,8 +56,8 @@ md-list {
     border-radius: 50%;
     content: "";
 }
+
 .center {
     position: absolute;
     left: 44%;
 }
-

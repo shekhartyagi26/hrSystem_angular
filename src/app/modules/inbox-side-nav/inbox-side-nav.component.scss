@@ -3,6 +3,7 @@
     display: flex;
     flex: 0.26;
 }
+
 md-sidenav {
     width: 280px;
     overflow: inherit;
@@ -12,54 +13,66 @@ md-list {
     md-list-item:hover {
         background-color: $hovecolor;
         a:hover {
-          text-decoration: none;
+            text-decoration: none;
         }
     }
 }
+
 .active {
-  background-color: $hovecolor;  
+    background-color: $hovecolor;
 }
+
 .blue {
-    color:$borderleftblue;
+    color: $borderleftblue;
 }
-.inbox-nav{
-   // margin-left: 2px;
+
+.inbox-nav {
+    // margin-left: 2px;
 }
+
 .mainnav {
     margin-left: 6px;
     padding: 4px 0px;
     position: relative;
     cursor: pointer;
 }
-.main-title{
+
+.main-title {
     font-weight: bold;
 }
-.sub-title{
+
+.sub-title {
     font-weight: bold;
 }
+
 .mainnav a {
     font-size: 12px;
     //font-weight: bold;
     text-transform: capitalize;
 }
-.nav-arrow{
+
+.nav-arrow {
     vertical-align: middle;
     float: right;
     position: absolute;
     right: 0;
 }
+
 .subenav {
     margin-left: 6px;
     padding: 4px 0px;
     cursor: pointer;
 }
+
 .subenav p {
     margin: 0px;
     position: relative;
 }
+
 .subenav a {
     font-size: 12px;
 }
+
 .logodesign {
     color: $white;
     display: inline-flex;
@@ -72,20 +85,25 @@ md-list {
     margin-left: 4px;
     margin-right: 3px;
 }
+
 .heightwidth27 {
     min-height: 27px;
     min-width: 27px;
 }
+
 .logo {
     @extend .logodesign;
-    @extend .heightwidth27;  
+    @extend .heightwidth27;
 }
+
 .assign {
     color: $jobassigncolor;
 }
+
 .candcolor {
     color: $drafcolor
 }
+
 .posload {
     left: 44%;
     position: relative;

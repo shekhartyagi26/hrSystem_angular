@@ -11,25 +11,23 @@
                     <md-error>Required</md-error>
                 </md-input-container>
             </p>
-               <md-radio-group class="pos-radio" name="type" [(ngModel)]="types" ngModel>
-                    <md-radio-button [value]="0" (click)="types = 0">Add header/footer</md-radio-button>
-                    <md-radio-button [value]="1" (click)="types = 1">Other than header/footer</md-radio-button>
-                </md-radio-group>
-                <div class="editor" *ngIf="types">
-                <ckeditor name="variableValue" 
-                    [config]="{uiColor: '#00ffff'}"
-                    debounce="500" ngModel>
+            <md-radio-group class="pos-radio" name="type" [(ngModel)]="types" ngModel>
+                <md-radio-button [value]="0" (click)="types = 0">Add header/footer</md-radio-button>
+                <md-radio-button [value]="1" (click)="types = 1">Other than header/footer</md-radio-button>
+            </md-radio-group>
+            <div class="editor" *ngIf="types">
+                <ckeditor name="variableValue" [config]="{uiColor: '#00ffff'}" debounce="500" ngModel>
                 </ckeditor>
-                </div>
-                <div class="text-area" *ngIf="!types">
-                	<md-input-container class="width-100">
-                        <textarea mdInput name="variableValue" mdTextareaAutosize  mdAutosizeMinRows="5" placeholder=" Write html code for header/footer" ngModel></textarea>
-                    </md-input-container>
-                </div>
+            </div>
+            <div class="text-area" *ngIf="!types">
+                <md-input-container class="width-100">
+                    <textarea mdInput name="variableValue" mdTextareaAutosize mdAutosizeMinRows="5" placeholder=" Write html code for header/footer" ngModel></textarea>
+                </md-input-container>
+            </div>
         </div>
     </div>
     <div class="fx-pos">
-    	<button md-raised-button (click)="close()">BACK</button>
-    	<button md-raised-button type="submit" color="accent">SUBMIT</button>
+        <button md-raised-button (click)="close()">BACK</button>
+        <button md-raised-button type="submit" color="accent">SUBMIT</button>
     </div>
 </form>

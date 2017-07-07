@@ -4,7 +4,7 @@
             <img src="assets/logo.png">
         </div>
         <hr>
-     <!--    <div class="hovestyle" (click)="goto('dashboard','Dashboard');sidenav.close()">
+        <!--    <div class="hovestyle" (click)="goto('dashboard','Dashboard');sidenav.close()">
             <a class="mainnav">Dashboard</a>
         </div>
         <hr> -->
@@ -12,7 +12,7 @@
             <a class="mainnav">Inbox</a>
         </div>
         <hr>
-  <!--       <div class="hovestyle" (click)="goto('useractivity','User Activity Logs');sidenav.close()">
+        <!--       <div class="hovestyle" (click)="goto('useractivity','User Activity Logs');sidenav.close()">
             <a class="mainnav">User Activity Logs</a>
         </div>
         <hr> -->
@@ -20,7 +20,7 @@
             <a class="mainnav">Settings</a>
         </div>
         <hr>
-<!--         <div class="hovestyle" (click)="goto('changepassword','Change Password');sidenav.close()">
+        <!--         <div class="hovestyle" (click)="goto('changepassword','Change Password');sidenav.close()">
             <a class="mainnav">Change Password</a>
         </div> -->
         <hr>
@@ -32,19 +32,18 @@
     <div fxLayout="column" fxFlex class="bgcolor">
         <md-toolbar color="accent">
             <button md-icon-button (click)="sidenav.open()">
-          <md-icon>menu</md-icon>
-          </button>
+                <md-icon>menu</md-icon>
+            </button>
             <span>{{title}}</span>
             <span fxFlex="86%"> </span>
             <a mdTooltip="Fetch Latest Emails" class="cursor-pt" *ngIf="title == 'Inbox'" (click)="emailRefresh()">
-            <i>
+                <i>
             <small><md-icon>system_update_alt</md-icon></small>
             </i>
             </a>
             <md-spinner class="commonSpinner" *ngIf="progressSpinnner"></md-spinner>
             <span fxFlex></span>
         </md-toolbar>
-       <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
     </div>
 </md-sidenav-container>
-

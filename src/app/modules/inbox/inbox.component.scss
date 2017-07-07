@@ -3,10 +3,12 @@
     display: flex;
     flex: 1;
 }
+
 .content {
     padding: 12px;
     background-color: $contentcolor;
 }
+
 .posload {
     left: 44%;
     position: relative;
@@ -14,54 +16,66 @@
 }
 
 .m-b {
-	margin-bottom: 1rem !important;
+    margin-bottom: 1rem !important;
 }
+
 .example-button-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  align-content: space-around;
-  a {
-    margin-left: 2px;
-    margin-right: 2px;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: space-around;
+    a {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
 }
+
 .cyan {
-	background-color: $cyan;
+    background-color: $cyan;
 }
+
 .white {
-	backgournd-color: $white;
-	color: inherit;
+    backgournd-color: $white;
+    color: inherit;
 }
+
 .d-w {
-	background-color: white;
-	color: inherit;
+    background-color: white;
+    color: inherit;
 }
+
 .b-r {
-	border-radius: 5%;
+    border-radius: 5%;
 }
+
 .options-main {
-  margin-right: 42.7%;
+    margin-right: 42.7%;
 }
+
 .options-sub {
-  margin-right: 40%;
+    margin-right: 40%;
 }
+
 .card-pos {
-  position: relative;
-  padding: 10px 0px 0px 12px;
-  left: -5.4%;
+    position: relative;
+    padding: 10px 0px 0px 12px;
+    left: -5.4%;
 }
+
 .wid-300 {
-  width: 360px;
+    width: 360px;
 }
+
 .mar-pos {
-  margin-left: 10px;
-  margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .pos {
     width: 116px;
     overflow: hidden;
 }
+
 .m-s {
     color: $white;
     text-align: center;

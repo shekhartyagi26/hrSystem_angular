@@ -1,8 +1,9 @@
 .full {
-	width: 100%;
+    width: 100%;
 }
+
 .label {
-	padding: .25em .5em;
+    padding: .25em .5em;
     font-size: 75%;
     line-height: 1;
     vertical-align: baseline;
@@ -13,18 +14,22 @@
     text-align: center;
     display: inline-block;
 }
+
 .m-f {
-	margin: 15px 0px;
+    margin: 15px 0px;
 }
+
 .fx-pos {
-	position: absolute;
+    position: absolute;
     top: 91%;
     left: 75%;
 }
+
 .m-p {
-	max-height: 385px !important;
+    max-height: 385px !important;
     overflow: auto;
 }
+
 m-b {
     margin: 0px 5px !important;
 }

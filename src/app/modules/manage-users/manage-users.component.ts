@@ -11,5 +11,4 @@ export class ManageUsersComponent implements OnInit {
 
     ngOnInit() {
     }
-
 }
